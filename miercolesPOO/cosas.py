@@ -106,7 +106,16 @@ class Perro:
   
   @classmethod
   def perro_grande(cls, estatura):
+    #cls = Perro
     if estatura > 0.79:
       return cls("", 0, estatura)
+      #return Perro("0", 0, estatura)
+  
+  @classmethod
+  def constructor_dos(cls, raza, edad):
+    if edad > 0 and edad < 20:
+      return cls(raza, edad, 0.0)
+    else:
+      return cls(raza, 0, 0.0)
 
 
